@@ -1,7 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
 
+html {
+    box-sizing: border-box;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
 
 /* -------------------------------------------------- */
 
@@ -40,3 +45,107 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+.recept {
+    background-position: center;
+    background-size: cover;
+    min-height: 90px;
+    border: solid 1px white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.hlavni-recept {
+    background-image: url(images/burger.jpg);
+    background-repeat: no-repeat;
+    min-height: 200px;
+    background-size: 100%;
+    border: solid 1px white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.recept2 {
+    background-image: url(images/sushi.jpg);
+    background-repeat: no-repeat;
+}
+
+.recept3 {
+    background-image: url(images/rajcata.jpg);
+    background-repeat: no-repeat;
+}
+
+.recept4 {
+    background-image: url(images/kure.jpg);
+    background-repeat: no-repeat;
+}
+
+.recept5 {
+    background-image: url(images/grilovani.jpg);
+    background-repeat: no-repeat;
+}
+
+.doporucujeme {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.recept-kategorie {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro';
+}
+
+.recept-meta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recept-nazev {
+    font-size: 28px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+
+.recept_recept2, .recept_recept3, .recept_recept4, .recept_recept5 {
+    font-size: 18px;
+}
+
+.recept-komentare {
+    float: left;
+}
+
+@media (min-width: 480px) {
+    .hlavni-recept {
+        min-height: 250px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .recept {
+        min-height: 150px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px
+    }
+    .doporucujeme {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .sloupec {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        width: 50%;
+    }
+}
